@@ -1,0 +1,25 @@
+graph TB
+    CURSOR[Cursor IDE<br/>AI-ассистент, Skills, Промпты]
+    N8N[n8n<br/>Визуальные workflow, Триггеры, AI-ноды]
+    MCP[MCP Protocol<br/>Унифицированный доступ к сервисам]
+    
+    EMAIL[Email / Slack]
+    CRM[CRM / ERP]
+    GDRIVE[Google Drive]
+    DB[Базы данных]
+
+    CURSOR --> MCP
+    CURSOR --> N8N
+    N8N --> MCP
+    MCP --> EMAIL
+    MCP --> CRM
+    MCP --> GDRIVE
+    MCP --> DB
+
+    style CURSOR fill:#cce5ff,stroke:#0d6efd
+    style N8N fill:#fff3cd,stroke:#ffc107
+    style MCP fill:#d4edda,stroke:#28a745
+    style EMAIL fill:#f0f0f0,stroke:#666
+    style CRM fill:#f0f0f0,stroke:#666
+    style GDRIVE fill:#f0f0f0,stroke:#666
+    style DB fill:#f0f0f0,stroke:#666

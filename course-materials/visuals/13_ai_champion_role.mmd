@@ -1,0 +1,35 @@
+graph TB
+    subgraph CHAMPION["AI Champion"]
+        ROLE[Роль в организации]
+    end
+
+    subgraph SKILLS_CH["Компетенции"]
+        SK1[Промпт-инжиниринг]
+        SK2[Настройка агентов]
+        SK3[Аудит процессов]
+        SK4[Обучение команды]
+    end
+
+    subgraph TASKS["Обязанности"]
+        T1[Поддержка AI-инструментов<br/>в отделе]
+        T2[Создание и обновление<br/>библиотеки Skills]
+        T3[Мониторинг качества<br/>работы агентов]
+        T4[Сбор обратной связи<br/>от сотрудников]
+        T5[Масштабирование<br/>успешных практик]
+    end
+
+    subgraph CRITERIA["Критерии отбора"]
+        CR1[Техническая грамотность]
+        CR2[Лидерские качества]
+        CR3[Понимание процессов отдела]
+        CR4[Мотивация к инновациям]
+    end
+
+    ROLE --> SKILLS_CH
+    ROLE --> TASKS
+    ROLE --> CRITERIA
+
+    style CHAMPION fill:#e2d9f3,stroke:#6f42c1
+    style SKILLS_CH fill:#cce5ff,stroke:#0d6efd
+    style TASKS fill:#d4edda,stroke:#28a745
+    style CRITERIA fill:#fff3cd,stroke:#ffc107

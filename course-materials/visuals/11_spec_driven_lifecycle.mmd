@@ -1,0 +1,47 @@
+graph LR
+    subgraph SPEC["1. Spec — Спецификация"]
+        S1[Описание процесса]
+        S2[Требования к данным]
+        S3[Правила безопасности]
+        S4[Метрики успеха]
+    end
+
+    subgraph BUILD["2. Build — Создание"]
+        B1[Разработка Skills]
+        B2[Настройка n8n Workflow]
+        B3[Подключение MCP]
+    end
+
+    subgraph TEST["3. Test — Тестирование"]
+        T1[Unit-тесты навыков]
+        T2[Интеграционные тесты]
+        T3[Time-to-Value проверка]
+    end
+
+    subgraph DEPLOY["4. Deploy — Развертывание"]
+        D1[Пилотный запуск]
+        D2[AI Champion контроль]
+        D3[Обучение команды]
+    end
+
+    subgraph MONITOR["5. Monitor — Мониторинг"]
+        MO1[Метрики качества]
+        MO2[Аудит действий]
+        MO3[Обратная связь]
+    end
+
+    subgraph OPTIMIZE["6. Optimize — Оптимизация"]
+        O1[Анализ ошибок]
+        O2[Улучшение промптов]
+        O3[Масштабирование]
+    end
+
+    SPEC --> BUILD --> TEST --> DEPLOY --> MONITOR --> OPTIMIZE
+    OPTIMIZE -->|Новый цикл| SPEC
+
+    style SPEC fill:#cce5ff,stroke:#0d6efd
+    style BUILD fill:#d4edda,stroke:#28a745
+    style TEST fill:#fff3cd,stroke:#ffc107
+    style DEPLOY fill:#e2d9f3,stroke:#6f42c1
+    style MONITOR fill:#f8d7da,stroke:#dc3545
+    style OPTIMIZE fill:#fce4ec,stroke:#e91e63
